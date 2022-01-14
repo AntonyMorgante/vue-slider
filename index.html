@@ -24,7 +24,7 @@
             <div class="chevron lower" @click="upcurrent">
                 <i class="fas fa-chevron-down"></i>
             </div>
-            <img v-for="(item,counter) in items" :class="iscurrent(counter)" class="slider-img" :src="item.image" alt="">
+            <img v-for="(item,counter) in items" :class="iscurrent(counter)" @click="setcurrent(counter)" class="slider-img" :src="item.image" alt="">
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
